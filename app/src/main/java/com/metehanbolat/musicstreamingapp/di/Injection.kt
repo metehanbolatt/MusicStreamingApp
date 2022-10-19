@@ -1,6 +1,8 @@
 package com.metehanbolat.musicstreamingapp.di
 
+import com.metehanbolat.musicstreamingapp.repository.TrackRepository
 import dagger.Module
+import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 
@@ -8,4 +10,6 @@ import dagger.hilt.components.SingletonComponent
 @InstallIn(SingletonComponent::class)
 object Injection {
 
+    @Provides
+    fun provideRepository(): TrackRepository { return TrackRepository() }
 }
