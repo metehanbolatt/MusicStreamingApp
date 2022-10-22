@@ -117,7 +117,7 @@ fun Player(
                     contentDescription = stringResource(id = R.string.play_indicator),
                     modifier = Modifier
                         .clickable(!isBuffering.value, onClick = {
-                            onMusicPlayerClick.onMusicButtonClick(MusicPlayerOption.Previous)
+                            onMusicPlayerClick.onMusicButtonClick(MusicPlayerOption.Play)
                         })
                         .padding(16.dp)
                         .size(35.dp)
