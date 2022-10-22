@@ -3,6 +3,7 @@ package com.metehanbolat.musicstreamingapp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.viewModels
+import com.metehanbolat.musicstreamingapp.models.MusicPlayerOption
 
 class MainActivity : ComponentActivity() {
 
@@ -19,4 +20,8 @@ class MainActivity : ComponentActivity() {
 
         }
     }
+}
+
+interface OnMusicButtonClick {
+    fun onMusicButtonClick(command: MusicPlayerOption)
 }
